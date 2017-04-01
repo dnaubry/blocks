@@ -1,0 +1,122 @@
+/*
+Theme Name: Blocks
+Author: Danielle Aubry
+Author URI: http://danielleaubry.com
+Version: 1.0
+*/
+@import url("https://fonts.googleapis.com/css?family=Overpass+Mono|Roboto");
+/* Fonts */
+/* Colors */
+/* Flex Layout - Row */
+.flex-container {
+  display: flex; }
+
+.flex-container--wrap {
+  flex-wrap: wrap; }
+
+/* Flex Layout - Column */
+.flex-container--column {
+  display: flex;
+  flex-direction: column; }
+
+.site-header {
+  font-family: "Roboto", sans-serif;
+  padding: 1rem 1rem 0;
+  text-align: center; }
+  @media (min-width: 580px) {
+    .site-header {
+      padding: .7rem 1rem;
+      text-align: left; } }
+  .site-header h1 {
+    border-bottom: 1px solid #BFB9BC; }
+  .site-header h5 {
+    font-size: .9rem; }
+    @media (min-width: 580px) {
+      .site-header h5 {
+        padding-left: 2rem; } }
+  .site-header a {
+    text-decoration: none;
+    color: #574D5A; }
+  .site-header a:hover {
+    color: #BFB9BC; }
+
+.site-footer {
+  font-family: "Roboto", sans-serif;
+  padding-left: 1rem;
+  margin-top: 30px;
+  border-top: 1px solid #BFB9BC; }
+
+.site-nav {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  background-color: #574D5A;
+  margin-right: .3rem; }
+  .site-nav ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+  .site-nav li {
+    list-style: none;
+    padding: 2rem 1rem;
+    flex: 1;
+    align-self: center; }
+  .site-nav li:last-of-type {
+    border: none; }
+  .site-nav a {
+    text-decoration: none;
+    color: #fff; }
+
+.post {
+  font-family: "Overpass Mono", monospace;
+  color: #fff;
+  padding: .5rem;
+  margin: .3rem;
+  width: 280px; }
+
+h2 {
+  font-size: 1rem;
+  border-bottom: 1px solid #E5E3E2; }
+
+p {
+  font-size: .9rem; }
+
+a {
+  color: #fff; }
+
+.post:nth-of-type(3n-2) {
+  background-color: #A4BFC0; }
+
+.post:nth-of-type(3n-1) {
+  background-color: #6885A0; }
+
+.post:nth-of-type(3n) {
+  background-color: #BE6C76; }
+
+.sort-container {
+  margin: .3rem;
+  font-family: "Roboto", sans-serif; }
+  .sort-container .form-select {
+    font-family: "Roboto", sans-serif;
+    font-size: .8rem;
+    padding: .2rem; }
+  .sort-container .form-select--large {
+    width: 140px; }
+  .sort-container .form-select--small {
+    width: 100px; }
+  .sort-container .form-submit {
+    border: 1px solid #BFB9BC;
+    background-color: #fff;
+    font-size: .8rem;
+    padding: .25rem .7rem;
+    transition: all 0.3s ease; }
+  .sort-container input:hover {
+    background-color: #BFB9BC;
+    color: #fff; }
+
+body {
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  color: #333; }

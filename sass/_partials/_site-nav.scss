@@ -1,0 +1,31 @@
+.site-nav {
+    font-family: $font-stack;
+    font-weight: 400;
+    background-color: $purple;
+    margin-right: .3rem;
+
+    ul {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    li {
+        list-style: none;
+        padding: 2rem 1rem;
+        flex: 1;
+        align-self: center;
+    }
+
+    li:last-of-type {
+        border: none;
+    }
+
+    a {
+        text-decoration: none;
+        color: #fff;
+    }
+}   

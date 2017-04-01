@@ -1,0 +1,14 @@
+/* Flex Layout - Row */
+.flex-container {
+    display: flex;
+}
+
+.flex-container--wrap {
+    flex-wrap: wrap;
+}
+
+/* Flex Layout - Column */
+.flex-container--column {
+    display: flex;
+    flex-direction: column;
+}

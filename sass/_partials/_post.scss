@@ -1,0 +1,32 @@
+.post {
+    font-family: $mono-font-stack;
+    color: #fff;
+    padding: .5rem;
+    margin: .3rem;
+    width: 280px;
+}
+
+h2 {
+    font-size: 1rem;
+    border-bottom: 1px solid $light-gray;
+}
+
+p {
+    font-size: .9rem;
+}
+
+a {
+    color: #fff;
+}
+
+.post:nth-of-type(3n-2) {
+    background-color: $green;
+}
+
+.post:nth-of-type(3n-1) {
+    background-color: $blue;
+}
+
+.post:nth-of-type(3n) {
+    background-color: $red;
+}
