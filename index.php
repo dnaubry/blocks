@@ -2,6 +2,7 @@
 
 get_header(); ?>
 
+<!-- sort posts form -->
 <div class="sort-container">
     <form action="" method="get">
         <select name="orderby" class="form-select form-select--large">
@@ -18,8 +19,8 @@ get_header(); ?>
         <select name="order" class="form-select form-select--small">
 		<?php
 			$order_options = array(
+                'ASC' => 'Ascending',
 				'DESC' => 'Descending',
-				'ASC' => 'Ascending',
 			);
 			foreach( $order_options as $value => $label ) {
 				echo "<option ".selected( $_GET['order'], $value )." value='$value'>$label</option>";
@@ -28,7 +29,7 @@ get_header(); ?>
 	</select>
         <input type="submit" value="Sort" class="form-submit" />
     </form>
-</div>
+</div><!-- sort posts form -->
 
 <!-- posts -->
 <div class="flex-container flex-container--wrap">

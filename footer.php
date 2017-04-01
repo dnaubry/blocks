@@ -1,20 +1,23 @@
-        <footer class="site-footer">
-            <?php
+            <footer class="site-footer">
+             <?php
 
-                $args = array(
-                    'theme_location' => 'footer'
-                );
+                  $args = array(
+                      'theme_location' => 'footer'
+                 );
 
-                ?>
-            <nav class="site-nav">
+                    ?>
+                <nav class="site-nav">
                 <?php wp_nav_menu( $args ); ?>
-            </nav>
+                </nav>
 
-            <p><?php bloginfo('name'); ?> - &copy; <?php echo date('Y'); ?>
+                <p>Danielle Aubry - &copy; <?php echo date('Y'); ?></p>
 
-        </footer>
+            </footer>
 
-    </div><!-- container -->
-<?php wp_footer(); ?>
+        </div><!-- inner flex-container -->
+
+    <?php wp_footer(); ?>
+
+    </div><!-- outer flex-container -->
 </body>
 </html>

@@ -1,3 +1,4 @@
+/* Posts */
 .post {
     font-family: $mono-font-stack;
     color: #fff;
@@ -19,14 +20,22 @@ a {
     color: #fff;
 }
 
-.post:nth-of-type(3n-2) {
-    background-color: $green;
+a:hover {
+    color: $gray;
 }
 
-.post:nth-of-type(3n-1) {
+.post:nth-of-type(4n-3) {
     background-color: $blue;
 }
 
-.post:nth-of-type(3n) {
+.post:nth-of-type(4n-2) {
     background-color: $red;
+}
+
+.post:nth-of-type(4n-1) {
+    background-color: $green;
+}
+
+.post:nth-of-type(4n) {
+    background-color: $yellow;
 }
