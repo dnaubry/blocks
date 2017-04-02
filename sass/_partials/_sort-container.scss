@@ -10,11 +10,19 @@
     }
 
     .form-select--large {
-        width: 140px;
+        width: 130px;
+
+        @include atSmall {
+            width: 140px;
+        }
     }
 
     .form-select--small {
-        width: 100px;
+        width: 90px;
+
+        @include atSmall {
+            width: 100px;
+        }
     }
 
     .form-submit {

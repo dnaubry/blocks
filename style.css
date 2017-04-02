@@ -29,7 +29,11 @@ Version: 1.0
       padding: .7rem 1rem;
       text-align: left; } }
   .site-header h1 {
-    border-bottom: 1px solid #BFB9BC; }
+    border-bottom: 1px solid #BFB9BC;
+    font-size: 1.5rem; }
+    @media (min-width: 580px) {
+      .site-header h1 {
+        font-size: 1.7rem; } }
   .site-header h5 {
     font-size: .9rem; }
     @media (min-width: 580px) {
@@ -113,9 +117,15 @@ a:hover {
     font-size: .8rem;
     padding: .2rem; }
   .sort-container .form-select--large {
-    width: 140px; }
+    width: 130px; }
+    @media (min-width: 580px) {
+      .sort-container .form-select--large {
+        width: 140px; } }
   .sort-container .form-select--small {
-    width: 100px; }
+    width: 90px; }
+    @media (min-width: 580px) {
+      .sort-container .form-select--small {
+        width: 100px; } }
   .sort-container .form-submit {
     border: 1px solid #BFB9BC;
     background-color: #fff;
