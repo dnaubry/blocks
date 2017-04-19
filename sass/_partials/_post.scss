@@ -3,8 +3,13 @@
     font-family: $mono-font-stack;
     color: #fff;
     padding: .5rem;
-    margin: .3rem;
-    width: 280px;
+    margin: .3rem 0;
+    width: 100%;
+
+    @include atSmall {
+        margin: .3rem;
+        width: 280px;
+    }
 }
 
 h2 {

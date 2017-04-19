@@ -1,7 +1,23 @@
 /* Sort Form Container */
-.sort-container {
-    margin: .3rem;
+.sort {
     font-family: $font-stack;
+    position: fixed;
+    bottom: 47px;
+    opacity: 0;
+    width: 100vw;
+    padding: .5rem 0;
+    text-align: center;
+    background-color: $purple;
+
+    @include atSmall {
+        position: static;
+        opacity: 100;
+        bottom: auto;
+        margin: .3rem;
+        padding: 0;
+        width: auto;
+        background-color: #fff;
+    }
 
     .form-select {
         font-family: $font-stack;
@@ -10,7 +26,7 @@
     }
 
     .form-select--large {
-        width: 130px;
+        width: 142px;
 
         @include atSmall {
             width: 140px;
@@ -18,7 +34,7 @@
     }
 
     .form-select--small {
-        width: 90px;
+        width: 110px;
 
         @include atSmall {
             width: 100px;
@@ -37,4 +53,8 @@
         background-color: $gray;
         color: #fff;
     }
+}
+
+.sort--is-visible {
+    opacity: 100;
 }

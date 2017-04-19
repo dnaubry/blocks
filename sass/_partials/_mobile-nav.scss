@@ -1,0 +1,28 @@
+/* Mobile Navigation */
+.mobile-nav {
+    border-top: 2px solid #fff;
+    font-family: $font-stack;
+    font-size: .9rem;
+    background-color: $purple;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+
+    @include atSmall {
+        display: none;
+    }
+
+    div {
+        color: #fff;
+        padding: .8rem;
+        text-align: center;
+    }
+}
+
+.menu-icon, .close-icon {
+    display: none;
+}
+
+.menu-icon--is-visible, .close-icon--is-visible {
+    display: block;
+}

@@ -2,57 +2,30 @@
 
 get_header(); ?>
 
-<!-- sort posts form -->
-<div class="sort-container">
-    <form action="" method="get">
-        <select name="orderby" class="form-select form-select--large">
-            <?php
-                $orderby_options = array(
-                    'post_title' => 'Sort By Title',
-                    'post_date' => 'Sort By Date Added',
-                );
-                foreach( $orderby_options as $value => $label ) {
-                    echo "<option ".selected( $_GET['orderby'], $value )." value='$value'>$label</option>";
-                }
-            ?>
-	    </select>
-        <select name="order" class="form-select form-select--small">
-		<?php
-			$order_options = array(
-                'ASC' => 'Ascending',
-				'DESC' => 'Descending',
-			);
-			foreach( $order_options as $value => $label ) {
-				echo "<option ".selected( $_GET['order'], $value )." value='$value'>$label</option>";
-			}
-		?>
-	</select>
-        <input type="submit" value="Sort" class="form-submit" />
-    </form>
-</div><!-- sort posts form -->
 
-<!-- posts -->
-<div class="flex-container flex-container--wrap">
+<div class="flex-item--1">
+    <!-- posts -->
+    <div class="flex-container flex-container--wrap">
 
-<?php
+    <?php
 
-if (have_posts()) :
-    while (have_posts()) : the_post(); ?>
+    if (have_posts()) :
+        while (have_posts()) : the_post(); ?>
 
-    <article class="post">
-            <h2><?php the_title(); ?></h2>
-            <?php the_content(); ?>
-        </article>
+        <article class="post">
+                <h2><?php the_title(); ?></h2>
+                <?php the_content(); ?>
+            </article>
 
-        <?php endwhile;
+            <?php endwhile;
 
-    else :
-        echo '<p>No content found</p>';
+        else :
+            echo '<p>No content found</p>';
 
-    endif; ?>
+        endif; ?>
 
-</div><!-- posts -->
-
+    </div><!-- posts -->
+</div>
 <?php
 
 get_footer();

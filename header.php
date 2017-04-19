@@ -25,7 +25,7 @@
                 <?php wp_nav_menu( $args ); ?>
             </nav><!-- site-nav -->
         
-        <!-- inner flex-container -->
+        <!-- main inner flex-container -->
         <div class="flex-item flex-container--column">
 
             <!-- site-header -->
@@ -33,3 +33,40 @@
                 <h1><a href="<?php echo home_url(); ?>"><?php bloginfo('name'); ?></a></h1>
                 <h5><?php bloginfo('description'); ?></h5>
             </header><!-- site-header -->
+            
+            <!-- sort & search flex-container -->
+            <div class="flex-container flex-container--wrap">
+                <!-- sort posts form -->
+                <div class="sort flex-item">
+                    <form action="" method="get">
+                        <select name="orderby" class="form-select form-select--large">
+                            <?php
+                                $orderby_options = array(
+                                    'post_title' => 'Sort By Title',
+                                    'post_date' => 'Sort By Date Added',
+                                );
+                                foreach( $orderby_options as $value => $label ) {
+                                    echo "<option ".selected( $_GET['orderby'], $value )." value='$value'>$label</option>";
+                                }
+                            ?>
+                        </select>
+                        <select name="order" class="form-select form-select--small">
+                        <?php
+                            $order_options = array(
+                                'ASC' => 'Ascending',
+                                'DESC' => 'Descending',
+                            );
+                            foreach( $order_options as $value => $label ) {
+                                echo "<option ".selected( $_GET['order'], $value )." value='$value'>$label</option>";
+                            }
+                        ?>
+                    </select>
+                        <input type="submit" value="Sort" class="form-submit" />
+                    </form>
+                </div><!-- sort posts form -->
+
+                <!-- search posts -->
+                <div class="search flex-item">
+                    <?php get_search_form(); ?>
+                </div><!-- search posts -->
+            </div><!-- sort & search flex-container -->

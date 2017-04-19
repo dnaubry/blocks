@@ -8,9 +8,12 @@ Version: 1.0
 @import url('https://fonts.googleapis.com/css?family=Overpass+Mono|Roboto');
 @import "_partials/mixins";
 @import "_partials/variables";
+@import "_partials/global";
 @import "_partials/flex-container";
 @import "_partials/site-header";
 @import "_partials/site-footer";
 @import "_partials/site-nav";
+@import "_partials/mobile-nav";
 @import "_partials/post";
-@import "_partials/sort-container";
+@import "_partials/sort";
+@import "_partials/search";
