@@ -5,8 +5,6 @@ Author URI: https://www.danielleaubry.com
 Version: 1.0
 */
 @import url("https://fonts.googleapis.com/css?family=Overpass+Mono|Roboto");
-/* Font Variables */
-/* Color Variables */
 /* Globals */
 html, body {
   margin: 0;
@@ -33,9 +31,6 @@ html, body {
 /* Flex Item Variations */
 .flex-item--1 {
   flex: 1; }
-
-.flex-item--text-align-right {
-  text-align: right; }
 
 /* Header */
 .site-header {
@@ -259,3 +254,7 @@ a:hover {
 span.screen-reader-text {
   position: absolute;
   left: -9999px; }
+
+.search-results {
+  margin: 0;
+  text-align: left; }
