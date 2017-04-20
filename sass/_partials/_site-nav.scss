@@ -3,13 +3,31 @@
     font-family: $font-stack;
     font-size: .9rem;
     background-color: $purple;
-    margin-right: .3rem;
+    opacity: 0;
+    position: fixed;
+    bottom: 0;
+    height: 100%;
+    width: 100vw;
+    transition: all 0.3s ease;
+    text-transform: lowercase;
+    z-index: -5;
+
+    @include atSmall {
+        opacity: 100;
+        margin-right: .3rem;
+        position: static;
+        bottom: auto;
+        height: auto;
+        width: auto;
+        z-index: 1;
+    }
 
     ul {
         margin: 0;
         padding: 0;
         display: flex;
-        flex-direction: column;    }
+        flex-direction: column;    
+    }
 
     li {
         list-style: none;
@@ -24,8 +42,12 @@
     }
 
     a:hover {
-        text-decoration: underline overline;
-        color: $gray;
+        color: $yellow;
     }
 
-}   
+}
+
+.site-nav--is-visible {
+    opacity: 100;
+    z-index: 1;
+}
