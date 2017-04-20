@@ -35,6 +35,10 @@
             
             <!-- sort & search flex-container -->
             <div class="flex-container flex-container--align-center flex-container--wrap">
+                <!-- search posts -->
+                <div class="search-form flex-item">
+                    <?php get_search_form(); ?>
+                </div><!-- search posts -->
                 <!-- sort posts form -->
                 <div class="sort-form flex-item">
                     <form action="" method="get">
@@ -63,9 +67,4 @@
                         <input type="submit" value="Sort" class="form-submit" />
                     </form>
                 </div><!-- sort posts form -->
-
-                <!-- search posts -->
-                <div class="search-form flex-item">
-                    <?php get_search_form(); ?>
-                </div><!-- search posts -->
             </div><!-- sort & search flex-container -->
