@@ -3,44 +3,42 @@
     font-family: $mono-font-stack;
     color: #fff;
     padding: .5rem;
-    margin: .3rem 0;
     width: 100%;
 
     @include atSmall {
-        margin: .3rem;
-        width: 280px;
+        min-width: 280px;
+    }
+
+    h2 {
+    font-size: 1rem;
+    border-bottom: 1px solid #fff;
+    }
+
+    p {
+        font-size: .9rem;
+    }
+
+    a {
+        color: #fff;
+    }
+
+    a:hover {
+        color: $pink;
     }
 }
 
-h2 {
-    font-size: 1rem;
-    border-bottom: 1px solid $light-gray;
-}
-
-p {
-    font-size: .9rem;
-}
-
-a {
-    color: #fff;
-}
-
-a:hover {
-    color: $gray;
-}
-
 .post:nth-of-type(4n-3) {
-    background-color: $blue;
+    background-color: $dark-blue;
 }
 
 .post:nth-of-type(4n-2) {
-    background-color: $red;
-}
-
-.post:nth-of-type(4n-1) {
     background-color: $green;
 }
 
+.post:nth-of-type(4n-1) {
+    background-color: $light-blue;
+}
+
 .post:nth-of-type(4n) {
-    background-color: $yellow;
+    background-color: $medium-gray;
 }

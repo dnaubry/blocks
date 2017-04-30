@@ -1,17 +1,18 @@
 /* Header */
 .site-header {
     font-family: $font-stack;
-    padding: .3rem 1rem 0;
     text-align: center;
 
     @include atSmall {
-       padding: .7rem 1rem; 
+       padding: 0;
+       margin: 2rem 0; 
        text-align: left;
     }
     
     h1 {
         border-bottom: 1px solid $gray;
         font-size: 1.5rem;
+        padding-left: .5rem;
 
         @include atSmall {
             font-size: 1.7rem;
@@ -19,19 +20,21 @@
     }
 
     h5 {
-        font-size: .9rem;
+        font-size: 1rem;
+        padding: .2rem;
 
         @include atSmall {
-            padding-left: 2rem;
+            padding: 0 0 0 1.5rem;
+            margin: .5rem;
         }
     }
 
     a {
         text-decoration: none;
-        color: $purple;
+        color: $dark-gray;
     }
 
     a:hover {
-        color: $gray;
+        color: $pink;
     }
 }

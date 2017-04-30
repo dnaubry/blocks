@@ -7,10 +7,11 @@
     width: 100vw;
     padding: .5rem 0;
     text-align: center;
-    background-color: $purple;
+    background-color: $dark-gray;
     transition: all 0.3s ease;
 
     @include atSmall {
+        display: inline-block;
         position: static;
         opacity: 100;
         bottom: auto;

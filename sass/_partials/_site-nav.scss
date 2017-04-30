@@ -2,10 +2,10 @@
 .site-nav {
     font-family: $font-stack;
     font-size: .9rem;
-    background-color: $purple;
-    opacity: 0;
+    background-color: $dark-gray;
     position: fixed;
     bottom: 0;
+    opacity: 0;
     height: 100%;
     width: 100vw;
     transition: all 0.3s ease;
@@ -14,11 +14,9 @@
 
     @include atSmall {
         opacity: 100;
-        margin-right: .3rem;
-        position: static;
-        bottom: auto;
-        height: auto;
-        width: auto;
+        display: inline-block;
+        height: 100%;
+        width: 110px;
         z-index: 1;
     }
 
@@ -42,7 +40,7 @@
     }
 
     a:hover {
-        color: $yellow;
+        color: $pink;
     }
 
 }

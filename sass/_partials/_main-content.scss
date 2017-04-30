@@ -1,0 +1,12 @@
+.main-content {
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    margin-bottom: 45px;
+
+    @include atSmall {
+        left: 110px;
+        margin-bottom: 0;
+        max-width: calc(100% - 110px);
+    }
+}

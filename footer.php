@@ -1,4 +1,4 @@
-            <footer class="site-footer">
+            <!--<footer class="site-footer">
              <?php
 
                   $args = array(
@@ -9,13 +9,12 @@
 
                 <p>Danielle Aubry - &copy; <?php echo date('Y'); ?></p>
 
-            </footer>
+            </footer>-->
 
         </div><!-- main inner flex-container -->
 
     <?php wp_footer(); ?>
 
-    </div><!-- outer flex-container -->
         <!-- mobile navigation menu -->
         <div class="mobile-nav flex-container">
                 <div class="flex-item--1">
