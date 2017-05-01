@@ -3,7 +3,7 @@
     font-family: $mono-font-stack;
     color: #fff;
     padding: .5rem;
-    width: 100%;
+    min-width: 280px;
 
     @include atSmall {
         min-width: 280px;

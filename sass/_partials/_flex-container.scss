@@ -7,6 +7,14 @@
     flex-wrap: wrap;
 }
 
+// .flex-container--mobile-column {
+//     flex-direction: column;
+
+//     @include atSmall {
+//         flex-direction: row;
+//     }
+// }
+
 /* Flex Item Variations */
 .flex-item--1 {
     flex: 1;

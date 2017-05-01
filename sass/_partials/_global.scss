@@ -8,3 +8,11 @@ html, body {
 .dashicons {
     padding-right: .2rem;
 }
+
+.spacer {
+    height: 45px;
+
+    @include atSmall {
+        display: none;
+    }
+}

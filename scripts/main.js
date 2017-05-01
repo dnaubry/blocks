@@ -24,6 +24,10 @@ jQuery( document ).ready(function ( $ ) {
       siteNav.toggleClass('site-nav--is-visible');
       menuIcon.toggleClass('menu-icon--is-visible');
       closeIcon.toggleClass('close-icon--is-visible');
+      searchIcon.toggle();
+      if (!body.hasClass('search-results')){
+        sortIcon.toggle();
+      }
     }
 
     function toggleSearch() {

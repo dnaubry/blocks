@@ -2,7 +2,8 @@
     display: inline-block;
     position: absolute;
     left: 0;
-    margin-bottom: 45px;
+    max-width: 100%;
+    z-index: 2;
 
     @include atSmall {
         left: 110px;

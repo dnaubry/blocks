@@ -9,6 +9,7 @@
     text-align: center;
     background-color: $dark-gray;
     transition: all 0.3s ease;
+    z-index: -5;
 
     @include atSmall {
         display: inline-block;
@@ -60,5 +61,5 @@
 
 .sort-form--is-visible {
     opacity: 100;
-    z-index: 5;
+    z-index: 10;
 }

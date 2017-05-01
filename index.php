@@ -3,7 +3,7 @@
 get_header(); ?>
 
     <!-- posts -->
-    <div class="flex-container flex-container--wrap">
+    <div class="flex-container flex-container--mobile-column flex-container--wrap">
 
     <?php
 
@@ -24,6 +24,7 @@ get_header(); ?>
         endif; ?>
         
     </div><!-- posts -->
+    <div class="spacer"></div>
 
 <?php
 
