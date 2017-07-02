@@ -1,8 +1,18 @@
 /* Globals */
 
 html, body {
+    background-color: #fff;
+    font-family: $body-font-stack;
     margin: 0;
     padding: 0;
+}
+
+a {
+    color: $gray;
+
+    &:hover {
+        color: $red;
+    }
 }
 
 .dashicons {

@@ -39,7 +39,7 @@
             <!-- sort posts form -->
             <div class="sort-form">
                 <form action="" method="get">
-                    <select name="orderby" class="form-select form-select--large">
+                    <select name="orderby" class="sort-select sort-select--large">
                         <?php
                             $orderby_options = array(
                                 'post_title' => 'Sort By Title',
@@ -50,7 +50,7 @@
                             }
                         ?>
                     </select>
-                    <select name="order" class="form-select form-select--small">
+                    <select name="order" class="sort-select sort-select--small">
                     <?php
                         $order_options = array(
                             'ASC' => 'Ascending',
@@ -61,7 +61,7 @@
                         }
                     ?>
                 </select>
-                    <input type="submit" value="Sort" class="form-submit" />
+                    <input type="submit" value="Sort" class="sort-submit" />
                 </form>
             </div><!-- sort posts form -->
         </div><!-- sort & search container -->

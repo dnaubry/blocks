@@ -1,0 +1,80 @@
+/* Search & Sort */
+
+.search-form, .sort-form {
+    background-color: $gray;
+    opacity: 0;
+    padding: .5rem 0;    
+    position: fixed;
+    bottom: 47px;
+    text-align: center;
+    transition: all 0.3s ease;
+    width: 100vw;    
+    z-index: -5;
+
+        @include atSmall {
+        background-color: #fff;        
+        display: inline-block;
+        opacity: 100;
+        margin: .3rem;
+        padding: 0;
+        position: static;
+        bottom: auto;
+        text-align: start;
+        width: auto;
+    }
+
+    &--is-visible {
+      opacity: 100;
+      z-index: 10;
+  }
+}
+
+.search-field, .sort-select {
+    border: 1px solid $gray;
+    font: .8rem $body-font-stack;
+    padding: .25rem;    
+}
+
+.search-field {
+    width: 240px;
+
+      @include atSmall {
+          width: 227px;
+      }
+}
+
+.sort-select {
+    &--large {
+    width: 142px;
+
+        @include atSmall {
+            width: 140px;
+        }
+    }
+
+    &--small {
+        width: 110px;
+
+        @include atSmall {
+            width: 100px;
+        }
+    }
+}
+
+.search-submit, .sort-submit {
+    background-color: #fff;
+    border: 1px solid $gray;
+    font: .8rem $body-font-stack;
+    padding: .25rem .7rem;
+    transition: all 0.3s ease;
+
+    &:hover {
+      background-color: $red;
+      color: #fff;
+    }
+}
+
+span.screen-reader-text {
+    position: absolute;
+    left: -9999px;
+}

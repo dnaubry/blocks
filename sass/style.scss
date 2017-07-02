@@ -5,15 +5,17 @@ Author URI: https://www.danielleaubry.com
 Version: 1.0
 */
 
-@import url('https://fonts.googleapis.com/css?family=Overpass+Mono|Roboto');
-@import "_partials/mixins";
-@import "_partials/variables";
-@import "_partials/global";
-@import "_partials/flex-container";
-@import "_partials/main-content";
-@import "_partials/site-header";
-@import "_partials/site-nav";
-@import "_partials/mobile-nav";
-@import "_partials/post";
-@import "_partials/sort-form";
-@import "_partials/search-form";
+@import url('https://fonts.googleapis.com/css?family=Raleway:700,900|Karla');
+
+@import "helpers/mixins";
+@import "helpers/variables";
+
+@import "base/global";
+
+@import "layout/main-content";
+@import "layout/site-header";
+@import "layout/site-nav";
+@import "layout/mobile-nav";
+
+@import "components/post";
+@import "components/form";

@@ -1,9 +1,9 @@
 /* Mobile Navigation */
 .mobile-nav {
+    background-color: $gray;
     border-top: 2px solid #fff;
-    font-family: $font-stack;
-    font-size: .9rem;
-    background-color: $dark-gray;
+    display: flex;
+    font: 700 .9rem $header-font-stack;
     position: fixed;
     bottom: 0;
     width: 100%;
@@ -15,6 +15,7 @@
 
     div {
         color: #fff;
+        flex: 1;
         padding: .8rem;
         text-align: center;
     }

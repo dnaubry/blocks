@@ -1,0 +1,27 @@
+/* Posts */
+.posts {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Post */
+.post {
+    background-color: $white;
+    border-bottom: 4px solid $teal;
+    box-sizing: border-box;
+    color: $gray;
+    flex: 1 1 100%;
+    margin: .125rem;
+    padding: .5rem;
+
+    @include atSmall {
+        flex: 1 1 280px;
+    }
+   
+
+    h2 {
+        border-bottom: 1px solid $teal;
+        font: 900 1.1rem $header-font-stack;
+        letter-spacing: .075rem;
+    }
+}

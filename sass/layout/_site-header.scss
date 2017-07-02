@@ -1,6 +1,6 @@
 /* Header */
 .site-header {
-    font-family: $font-stack;
+    font-family: $body-font-stack;
     text-align: center;
 
     @include atSmall {
@@ -11,17 +11,20 @@
     
     h1 {
         border-bottom: 1px solid $gray;
-        font-size: 1.5rem;
-        font-weight: 400;
+        font: 900 1.5rem $header-font-stack;
+        letter-spacing: .05rem;
         padding-left: .5rem;
 
         @include atSmall {
-            font-size: 1.7rem;
+            font-size: 2rem;
         }
     }
 
+    a {
+        text-decoration: none;
+    }
+
     h5 {
-        font-size: .9rem;
         font-weight: 400;
         padding: .2rem;
 
@@ -29,14 +32,5 @@
             padding: 0 0 0 1.5rem;
             margin: .5rem;
         }
-    }
-
-    a {
-        text-decoration: none;
-        color: $dark-gray;
-    }
-
-    a:hover {
-        color: $pink;
     }
 }

@@ -3,14 +3,14 @@
 get_header(); ?>
 
     <!-- posts -->
-    <div class="flex-container flex-container--mobile-column flex-container--wrap">
+    <div class="posts">
 
     <?php
 
     if (have_posts()) :
         while (have_posts()) : the_post(); ?>
 
-            <article class="post flex-item--1">
+            <article class="post">
                 <h2><?php the_title(); ?></h2>
                 <?php the_content(); ?>
             </article>

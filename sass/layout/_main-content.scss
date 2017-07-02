@@ -2,12 +2,12 @@
     display: inline-block;
     position: absolute;
     left: 0;
-    max-width: 100%;
+    width: 100%;
     z-index: 2;
 
     @include atSmall {
         left: 110px;
         margin-bottom: 0;
-        max-width: calc(100% - 110px);
+        width: calc(100% - 110px);
     }
 }
