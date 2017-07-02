@@ -2,12 +2,20 @@
     display: inline-block;
     position: absolute;
     left: 0;
-    width: 100%;
+    width: 100vw;
     z-index: 2;
 
     @include atSmall {
         left: 110px;
         margin-bottom: 0;
         width: calc(100% - 110px);
+    }
+}
+
+.spacer {
+    height: 60px;
+
+    @include atSmall {
+        display: none;
     }
 }

@@ -10,12 +10,13 @@
     border-bottom: 4px solid $teal;
     box-sizing: border-box;
     color: $gray;
-    flex: 1 1 100%;
-    margin: .125rem;
+    flex: 1 0 100%;
+    margin: .125rem 0;
     padding: .5rem;
 
     @include atSmall {
         flex: 1 1 280px;
+        margin: .125rem;        
     }
    
 
@@ -23,5 +24,9 @@
         border-bottom: 1px solid $teal;
         font: 900 1.1rem $header-font-stack;
         letter-spacing: .075rem;
+    }
+
+    a {
+        word-break: break-all;
     }
 }

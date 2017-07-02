@@ -5,7 +5,7 @@
     opacity: 0;
     padding: .5rem 0;    
     position: fixed;
-    bottom: 47px;
+    bottom: 60px;
     text-align: center;
     transition: all 0.3s ease;
     width: 100vw;    
@@ -15,7 +15,7 @@
         background-color: #fff;        
         display: inline-block;
         opacity: 100;
-        margin: .3rem;
+        margin: .125rem;
         padding: 0;
         position: static;
         bottom: auto;
@@ -44,6 +44,8 @@
 }
 
 .sort-select {
+    padding: .2rem .25rem;
+
     &--large {
     width: 142px;
 

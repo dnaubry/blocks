@@ -6,7 +6,7 @@
     font: 700 .9rem $header-font-stack;
     position: fixed;
     bottom: 0;
-    width: 100%;
+    width: 100vw;
     z-index: 10;
 
     @include atSmall {
@@ -16,7 +16,7 @@
     div {
         color: #fff;
         flex: 1;
-        padding: .8rem;
+        padding: 1.2rem;
         text-align: center;
     }
 }
